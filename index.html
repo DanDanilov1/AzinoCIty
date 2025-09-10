@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional handyman services in Orange County, CA. Expert home repairs, maintenance, and improvements. Licensed, insured, and serving all 34 cities in Orange County.">
+    <meta name="keywords" content="handyman, Orange County, home repair, maintenance, contractor, plumbing, electrical, carpentry, painting">
+    <meta name="author" content="Orange County Handyman Services">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Orange County Handyman Services - Professional Home Repairs">
+    <meta property="og:description" content="Expert handyman services throughout Orange County. Licensed professionals for all your home repair and maintenance needs.">
+    <meta property="og:image" content="./images/og-image.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Orange County Handyman Services",
+      "description": "Professional handyman services in Orange County, California",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Orange County",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      },
+      "telephone": "(714) 555-0123",
+      "email": "danilovdn7@gmail.com",
+      "serviceArea": "Orange County, California"
+    }
+    </script>
+    
+    <title>Orange County Handyman Services - Professional Home Repairs & Maintenance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>OC Handyman</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#order" class="cta-button">Get Quote</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Expert Handyman Services Across Orange County</h1>
+                <p class="hero-subtitle">Professional home repairs, maintenance, and improvements. Licensed, insured, and trusted by homeowners throughout all 34 cities in Orange County.</p>
+                <button class="hero-cta" onclick="scrollToSection('order')">Start a Project</button>
+            </div>
+            
+            <!-- Orange County Cities Element -->
+            <section class="oc-cities-showcase" aria-label="Orange County Cities Served">
+                <div class="cities-container">
+                    <h3>Serving All 34 Orange County Cities</h3>
+                    <div class="cities-grid">
+                        <div class="city-item">Anaheim</div>
+                        <div class="city-item">Brea</div>
+                        <div class="city-item">Buena Park</div>
+                        <div class="city-item">Costa Mesa</div>
+                        <div class="city-item">Cypress</div>
+                        <div class="city-item">Dana Point</div>
+                        <div class="city-item">Fountain Valley</div>
+                        <div class="city-item">Fullerton</div>
+                        <div class="city-item">Garden Grove</div>
+                        <div class="city-item">Huntington Beach</div>
+                        <div class="city-item">Irvine</div>
+                        <div class="city-item">La Habra</div>
+                        <div class="city-item">La Palma</div>
+                        <div class="city-item">Laguna Beach</div>
+                        <div class="city-item">Laguna Hills</div>
+                        <div class="city-item">Laguna Niguel</div>
+                        <div class="city-item">Laguna Woods</div>
+                        <div class="city-item">Lake Forest</div>
+                        <div class="city-item">Los Alamitos</div>
+                        <div class="city-item">Mission Viejo</div>
+                        <div class="city-item">Newport Beach</div>
+                        <div class="city-item">Orange</div>
+                        <div class="city-item">Placentia</div>
+                        <div class="city-item">Rancho Santa Margarita</div>
+                        <div class="city-item">San Clemente</div>
+                        <div class="city-item">San Juan Capistrano</div>
+                        <div class="city-item">Santa Ana</div>
+                        <div class="city-item">Seal Beach</div>
+                        <div class="city-item">Stanton</div>
+                        <div class="city-item">Tustin</div>
+                        <div class="city-item">Villa Park</div>
+                        <div class="city-item">Westminster</div>
+                        <div class="city-item">Yorba Linda</div>
+                        <div class="city-item">Aliso Viejo</div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="section-title">Our Professional Services</h2>
+                <div class="services-grid">
+                    <article class="service-card" data-service="plumbing">
+                        <div class="service-icon">🔧</div>
+                        <h3>Plumbing & Fixtures</h3>
+                        <p>Expert plumbing repairs, fixture installation, and water system maintenance.</p>
+                        <div class="service-submenu">
+                            <ul>
+                                <li>Leak repairs</li>
+                                <li>Faucet installation</li>
+                                <li>Toilet repairs</li>
+                                <li>Pipe maintenance</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="service-card" data-service="electrical">
+                        <div class="service-icon">⚡</div>
+                        <h3>Electrical Services</h3>
+                        <p>Safe electrical repairs, outlet installation, and lighting solutions.</p>
+                        <div class="service-submenu">
+                            <ul>
+                                <li>Outlet installation</li>
+                                <li>Light fixture setup</li>
+                                <li>Switch repairs</li>
+                                <li>Circuit troubleshooting</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="service-card" data-service="carpentry">
+                        <div class="service-icon">🔨</div>
+                        <h3>Carpentry & Repairs</h3>
+                        <p>Custom carpentry work, furniture assembly, and structural repairs.</p>
+                        <div class="service-submenu">
+                            <ul>
+                                <li>Furniture assembly</li>
+                                <li>Cabinet repairs</li>
+                                <li>Door installation</li>
+                                <li>Custom shelving</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="service-card" data-service="maintenance">
+                        <div class="service-icon">🏠</div>
+                        <h3>Home Maintenance</h3>
+                        <p>Regular maintenance, painting, and general home improvement services.</p>
+                        <div class="service-submenu">
+                            <ul>
+                                <li>Interior painting</li>
+                                <li>Drywall repairs</li>
+                                <li>Tile installation</li>
+                                <li>General maintenance</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Form Section -->
+        <section class="order-form" id="order">
+            <div class="container">
+                <h2 class="section-title">Request Your Free Quote</h2>
+                <form class="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Type *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="plumbing">Plumbing & Fixtures</option>
+                            <option value="electrical">Electrical Services</option>
+                            <option value="carpentry">Carpentry & Repairs</option>
+                            <option value="maintenance">Home Maintenance</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Problem Description *</label>
+                        <textarea id="description" name="description" rows="5" placeholder="Please describe your project or repair needs in detail..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="images">Upload Images (Optional)</label>
+                        <input type="file" id="images" name="images" accept="image/*" multiple>
+                        <small>Upload photos of the area or problem to help us provide a more accurate quote.</small>
+                    </div>
+
+                    <input type="hidden" name="_replyto" value="danilovdn7@gmail.com">
+                    <input type="hidden" name="_subject" value="New Handyman Service Request">
+
+                    <button type="submit" class="submit-button">Submit Request</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">About Orange County Handyman Services</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>With over 15 years of experience serving Orange County communities, we are your trusted local handyman service. Our licensed and insured professionals take pride in delivering quality workmanship and exceptional customer service to homeowners across all 34 cities in Orange County.</p>
+                        
+                        <p>From minor repairs to major home improvements, we handle projects of all sizes with attention to detail and competitive pricing. Our commitment to excellence and customer satisfaction has made us the go-to handyman service for thousands of Orange County families.</p>
+                        
+                        <div class="about-features">
+                            <div class="feature">✓ Licensed & Insured</div>
+                            <div class="feature">✓ 15+ Years Experience</div>
+                            <div class="feature">✓ Same-Day Service Available</div>
+                            <div class="feature">✓ 100% Satisfaction Guarantee</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>📞 Phone</h3>
+                            <p><a href="tel:+17145550123">(714) 555-0123</a></p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>📧 Email</h3>
+                            <p><a href="mailto:danilovdn7@gmail.com">danilovdn7@gmail.com</a></p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>🕒 Hours</h3>
+                            <p>Monday - Friday: 7:00 AM - 6:00 PM<br>
+                               Saturday: 8:00 AM - 4:00 PM<br>
+                               Sunday: Emergency calls only</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>🏠 Service Area</h3>
+                            <p>All of Orange County, California<br>
+                               Licensed in all 34 cities</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424165.3353319353!2d-118.13468932089843!3d33.717003107579795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc925c54d5f7c1%3A0xdea6c3618ff0d607!2sOrange%20County%2C%20CA!5e0!3m2!1sen!2sus!4v1694123456789!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Orange County Service Area Map">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>OC Handyman</h3>
+                    <p>Your trusted Orange County handyman service. Licensed, insured, and ready to help with all your home repair needs.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#order">Get Quote</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📞 (714) 555-0123</p>
+                    <p>📧 danilovdn7@gmail.com</p>
+                    <p>🏠 Serving All Orange County</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Orange County Handyman Services. All rights reserved. | Licensed & Insured</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
