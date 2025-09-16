@@ -1,412 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional handyman services in Southern California specializing in water damage recovery, home repairs, and improvements with premium quality craftsmanship.">
-    <title>Coastal Handyman | Premium Repair Services in Southern California</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-</head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <span class="text-xl font-bold text-blue-600">COASTAL<span class="text-gray-800">HANDYMAN</span></span>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#services" class="text-gray-700 hover:text-blue-600 transition">Services</a>
-                    <a href="#gallery" class="text-gray-700 hover:text-blue-600 transition">Work</a>
-                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition">Clients</a>
-                    <a href="#contact" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">Get Quote</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button id="menu-toggle" class="text-gray-700">
-                        <i data-feather="menu"></i>
-                    </button>
-                </div>
+<!-- Navigation -->
+<nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex items-center">
+                <span class="text-xl font-bold text-blue-600">COASTAL<span class="text-gray-800">HANDYMAN</span></span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#services" class="text-gray-700 hover:text-blue-600 transition">Services</a>
+                <a href="#gallery" class="text-gray-700 hover:text-blue-600 transition">Work</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition">Clients</a>
+                <a href="#contact" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">Get Quote</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button id="menu-toggle" class="text-gray-700">
+                    <i data-feather="menu"></i>
+                </button>
             </div>
         </div>
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Services</a>
-                <a href="#gallery" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Work</a>
-                <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Clients</a>
-                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700">Get Quote</a>
-            </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Services</a>
+            <a href="#gallery" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Work</a>
+            <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Clients</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700">Get Quote</a>
         </div>
-    </nav>
+    </div>
+</nav>
 
+<!-- Hero Section with Milwaukee Drill Background -->
+<section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="relative h-full flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:w-1/2" data-aos="fade-right">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Your Coastal Home Handyman</h1>
+                <p class="text-xl text-gray-200 mb-8">Precision repairs with that Southern California care. Serving Laguna Beach and surrounding areas since 2010.</p>
+                <a href="#contact" class="inline-block px-8 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition transform hover:scale-105">Get Started Today</a>
+            </div>
+        </div>
+    </div>
+    <div class="absolute bottom-10 left-0 right-0 flex justify-center">
+        <a href="#services" class="animate-bounce">
+            <i data-feather="chevron-down" class="text-white w-10 h-10"></i>
+        </a>
+    </div>
+</section>
+
+<style>
+/* Hero Section Styles */
+.hero-section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: url('AzinoCIty/Lucid_Origin_A_closeup_highangle_shot_of_a_professional_Milwau_3.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1px);
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
     .hero-section {
-            height: 100vh;
-            position: relative;
-            overflow: hidden;
-            background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAJYBAADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Your Coastal Home Handyman</h1>
-                    <p class="text-xl text-gray-200 mb-8">Precision repairs with that Southern California care. Serving Laguna Beach and surrounding areas since 2010.</p>
-                    <a href="#contact" class="inline-block px-8 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition transform hover:scale-105">Get Started Today</a>
-                </div>
-            </div>
-        </div>
-        <div class="absolute bottom-10 left-0 right-0 flex justify-center">
-            <a href="#services" class="animate-bounce">
-                <i data-feather="chevron-down" class="text-white w-10 h-10"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4">Our Premium Services</h2>
-                <p class="max-w-2xl mx-auto text-gray-600">From quick fixes to major restorations, we've got your home covered with white-glove service.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Service Card 1 -->
-                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="100" onclick="setService('Water Damage Recovery')">
-                    <div class="p-8 text-center">
-                        <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i data-feather="droplet" class="text-blue-600 w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">Water Damage Recovery</h3>
-                        <p class="text-gray-600">Expert drying, mold remediation, and structural repairs to restore your home after water incidents.</p>
-                        <button class="mt-4 text-blue-600 font-medium flex items-center justify-center mx-auto">
-                            Request Service
-                            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                <!-- Service Card 2 -->
-                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="200" onclick="setService('General Home Repairs')">
-                    <div class="p-8 text-center">
-                        <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i data-feather="home" class="text-blue-600 w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">General Home Repairs</h3>
-                        <p class="text-gray-600">Drywall, painting, trim work, and all those little things that make your home perfect.</p>
-                        <button class="mt-4 text-blue-600 font-medium flex items-center justify-center mx-auto">
-                            Request Service
-                            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                <!-- Service Card 3 -->
-                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="300" onclick="setService('Furniture Assembly')">
-                    <div class="p-8 text-center">
-                        <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i data-feather="package" class="text-blue-600 w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">Furniture Assembly</h3>
-                        <p class="text-gray-600">No more frustration with instructions. We'll assemble anything from IKEA to custom pieces.</p>
-                        <button class="mt-4 text-blue-600 font-medium flex items-center justify-center mx-auto">
-                            Request Service
-                            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                <!-- Service Card 4 -->
-                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="400" onclick="setService('Minor Home Improvements')">
-                    <div class="p-8 text-center">
-                        <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i data-feather="tool" class="text-blue-600 w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">Minor Home Improvements</h3>
-                        <p class="text-gray-600">Shelving, closet systems, hardware upgrades - small changes with big impact.</p>
-                        <button class="mt-4 text-blue-600 font-medium flex items-center justify-center mx-auto">
-                            Request Service
-                            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section id="contact" class="py-20 bg-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-xl shadow-xl overflow-hidden">
-                <div class="md:flex">
-                    <div class="md:w-1/2 bg-blue-600 text-white p-12" data-aos="fade-right">
-                        <h2 class="text-3xl font-bold mb-6">Get Your Free Quote Now!</h2>
-                        <p class="mb-8">Fill out this form and we'll get back to you within 24 hours with a personalized estimate.</p>
-                        <div class="space-y-4">
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0">
-                                    <i data-feather="phone" class="w-6 h-6"></i>
-                                </div>
-                                <a href="tel:7142279588" class="ml-3">(714) 227-9588</a>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0">
-                                    <i data-feather="mail" class="w-6 h-6"></i>
-                                </div>
-                                <p class="ml-3">service@coastalhandyman.com</p>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0">
-                                    <i data-feather="map-pin" class="w-6 h-6"></i>
-                                </div>
-                                <p class="ml-3">Serving all of Orange County, CA</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="md:w-1/2 p-12" data-aos="fade-left">
-                        <form id="contactForm" class="space-y-6">
-                            <input type="hidden" id="serviceType" name="serviceType" value="">
-                            <div>
-                                <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
-                                <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-                            </div>
-                            <div>
-                                <label for="photos" class="block text-sm font-medium text-gray-700">Upload Photos (Optional)</label>
-                                <input type="file" id="photos" name="photos" multiple accept="image/*" class="mt-1 block w-full text-sm text-gray-500
-                                file:mr-4 file:py-2 file:px-4
-                                file:rounded-md file:border-0
-                                file:text-sm file:font-semibold
-                                file:bg-blue-50 file:text-blue-700
-                                hover:file:bg-blue-100">
-                            </div>
-                            <div>
-                                <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
-                                <input type="tel" id="phone" name="phone" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-                            </div>
-                            <div>
-                                <label for="message" class="block text-sm font-medium text-gray-700">Tell us about your project</label>
-                                <textarea id="message" name="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
-                            </div>
-                            <div>
-                                <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition transform hover:scale-105">
-                                    Request Service
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Before & After Gallery -->
-    <section id="gallery" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4">Transformation Gallery</h2>
-                <p class="max-w-2xl mx-auto text-gray-600">See the dramatic before-and-after results of our work.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="before-after-slider rounded-xl overflow-hidden shadow-lg" data-aos="fade-right">
-                    <img src="https://picsum.photos/1024/576?random=1" alt="Water damage before repair" class="before-image">
-                    <img src="https://picsum.photos/1024/576?random=2" alt="Water damage after repair" class="after-image">
-                    <div class="slider-handle"></div>
-                </div>
-                
-                <div class="before-after-slider rounded-xl overflow-hidden shadow-lg" data-aos="fade-left">
-                    <img src="https://picsum.photos/1024/576?random=3" alt="Bathroom before renovation">
-                    <img src="https://picsum.photos/1024/576?random=4" alt="Bathroom after renovation" class="after-image">
-                    <div class="slider-handle"></div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12">
-                <a href="#contact" class="inline-block px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">Schedule Your Transformation</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4">What Our Clients Say</h2>
-                <p class="max-w-2xl mx-auto text-gray-600">Don't just take our word for it - hear from our satisfied customers.</p>
-            </div>
-            
-            <div class="relative max-w-4xl mx-auto">
-                <div class="testimonial-slider overflow-hidden">
-                    <div class="flex transition-transform duration-300 ease-in-out">
-                        <!-- Testimonial 1 -->
-                        <div class="testimonial-card flex-shrink-0 w-full px-4 active">
-                            <div class="bg-white p-8 rounded-xl shadow-md">
-                                <div class="mb-6">
-                                    <div class="flex items-center">
-                                        <img src="https://picsum.photos/200/200?random=10" alt="Sarah J." class="w-12 h-12 rounded-full mr-4">
-                                        <div>
-                                            <h4 class="font-bold text-gray-800">Sarah J.</h4>
-                                            <p class="text-gray-600">Laguna Beach</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-gray-700 italic mb-6">"After a pipe burst in my kitchen, Coastal Handyman was there within hours. Their water damage team was incredibly thorough and professional. They saved my hardwood floors and cabinetry that other companies said needed replacement. The attention to detail was remarkable."</p>
-                                <div class="flex">
-                                    <i data-feather="star" class="text-yellow-400 w-5 h-5 fill-current"></i>
-                                    <i data-feather="star" class="text-yellow-400 w-5 h-5 fill-current"></i>
-                                    <i data-feather="star" class="text-yellow-400 w-5 h-5 fill-current"></i>
-                                    <i data-feather="star" class="text-yellow-400 w-5 h-5 fill-current"></i>
-                                    <i data-feather="star" class="text-yellow-400 w-5 h-5 fill-current"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Testimonial 2 -->
-                        <div class="testimonial-card flex-shrink-0 w-full px-4">
-                            <div class="bg-white p-8 rounded-xl shadow-md">
-                                <div class="mb-6">
-                                    <div class="flex items-center">
-                                        <img src="https://picsum.photos/200/200?random=11" alt="Michael T." class="w-12 h-12 rounded-full mr-4">
-                                        <div>
-                                            <h4 class="font-bold text-gray-800">Michael T.</h4>
-                                            <p class="text-gray-600">Newport Beach</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-gray-700 italic mb-6">"I've used several handyman services in Orange County, but none compare to Coastal. They assembled an entire nursery's worth of furniture in half the time I expected. The technician even noticed a manufacturer defect in the crib and helped me get it replaced."</p>
-                                <div class="flex">
-                                    <i data-feather="star" class="text-yellow-400 w-5 h-5 fill-current"></i>
-                                    <i data-feather="star" class="text-yellow-400 w-5 h-5 fill-current"></i>
-                                    <i data-feather="star" class="text-yellow-400 w-5 h-5 fill-current"></i>
-                                    <i data-feather="star" class="text-yellow-400 w-5 h-5 fill-current"></i>
-                                    <i data-feather="star" class="text-yellow-400 w-5 h-5 fill-current"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Testimonial 3 -->
-                        <div class="testimonial-card flex-shrink-0 w-full px-4">
-                            <div class="bg-white p-8 rounded-xl shadow-md">
-                                <div class="mb-6">
-                                    <div class="flex items-center">
-                                        <img src="https://picsum.photos/200/200?random=12" alt="Jessica R." class="w-12 h-12 rounded-full mr-4">
-                                        <div>
-                                            <h4 class="font-bold text-gray-800">Jessica R.</h4>
-                                            <p class="text-gray-600">Dana Point</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-gray-700 italic mb-6">"The team transformed our outdated bathroom into a spa-like retreat. They worked with our designer to execute the vision perfectly. What impressed me most was their cleanliness - they left the house spotless every day. Worth every penny!"</p>
-                                <div class="flex">
-                                    <i data-feather="star" class="text-yellow-400 w-5 h-5 fill-current"></i>
-                                    <i data-feather="star" class="text-yellow-400 w-5 h-5 fill-current"></i>
-                                    <i data-feather="star" class="text-yellow-400 w-5 h-5 fill-current"></i>
-                                    <i data-feather="star" class="text-yellow-400 w-5 h-5 fill-current"></i>
-                                    <i data-feather="star" class="text-yellow-400 w-5 h-5 fill-current"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="flex justify-center mt-8 space-x-2">
-                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 active" onclick="showTestimonial(0)"></button>
-                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300" onclick="showTestimonial(1)"></button>
-                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300" onclick="showTestimonial(2)"></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4">Why Choose Coastal Handyman?</h2>
-                <p class="max-w-2xl mx-auto text-gray-600">We're not your average handyman service. Here's what sets us apart.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i data-feather="award" class="text-blue-600 w-10 h-10"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Premium Quality</h3>
-                    <p class="text-gray-600">We use only the highest quality materials and Milwaukee tools for flawless results that last.</p>
-                </div>
-                
-                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i data-feather="clock" class="text-blue-600 w-10 h-10"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">On Time, Every Time</h3>
-                    <p class="text-gray-600">We respect your time with precise appointment windows and completion dates.</p>
-                </div>
-                
-                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i data-feather="shield" class="text-blue-600 w-10 h-10"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Fully Insured</h3>
-                    <p class="text-gray-600">Complete peace of mind with $2M in liability coverage for all our services.</p>
-                </div>
-                
-                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i data-feather="users" class="text-blue-600 w-10 h-10"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Local Experts</h3>
-                    <p class="text-gray-600">Born and raised in SoCal, we understand the unique needs of coastal homes.</p>
-                </div>
-                
-                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i data-feather="calendar" class="text-blue-600 w-10 h-10"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Flexible Scheduling</h3>
-                    <p class="text-gray-600">Evenings and weekends available because we know you're busy.</p>
-                </div>
-                
-                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i data-feather="thumbs-up" class="text-blue-600 w-10 h-10"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Satisfaction Guaranteed</h3>
-                    <p class="text-gray-600">If you're not 100% happy, we'll make it right - no questions asked.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">COASTAL<span>HANDYMAN</span></h3>
-                    <p class="text-gray-400">Premium handyman services serving Southern California's most beautiful coastal communities since 2010.</p>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Services</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Water Damage Recovery</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Home Repairs</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Furniture Assembly</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Home Improvements</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                    <ul class="space-y-2">
-                        <li class="flex items-start">
-                            <i data-feather="phone" class="w-5 h-5 mr-3 mt-0.5"></i>
-                            <span class="text-gray-400">(714) 227-9588</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i data-feather="mail" class="w-5 h-5 mr-3 mt-0.5"></i>
-                            <span class="text-gray-400">service@coastalhandyman.com</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i data-feather="map-pin" class="w-5
+        background-attachment: scroll;
+    }
+}
+</style>
