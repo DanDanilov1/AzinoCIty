@@ -5,12 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional handyman services in Southern California specializing in water damage recovery, home repairs, and improvements with premium quality craftsmanship.">
     <title>Coastal Handyman | Premium Repair Services in Southern California</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        :root {
+            --primary: #1E88E5;
+            --secondary: #26C6DA;
+            --accent: #FF5252;
+            --light: #F5F7FA;
+            --dark: #263238;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark);
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-section {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            background: url('/static/main_image.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .before-after-slider {
+            position: relative;
+            height: 400px;
+        }
+        
+        .before-after-slider img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .testimonial-card {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        
+        .testimonial-card.active {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -46,7 +102,7 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="hero-overlay"></div>
+        <div class="absolute inset-0 bg-black/40"></div>
         <div class="relative h-full flex items-center">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="md:w-1/2" data-aos="fade-right">
@@ -210,15 +266,15 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="before-after-slider rounded-xl overflow-hidden shadow-lg" data-aos="fade-right">
-                    <img src="https://picsum.photos/1024/576?random=1" alt="Water damage before repair" class="before-image">
-                    <img src="https://picsum.photos/1024/576?random=2" alt="Water damage after repair" class="after-image">
-                    <div class="slider-handle"></div>
+                    <img src="http://static.photos/indoor/1024x576/1" alt="Water damage before repair" class="before-image">
+                    <img src="http://static.photos/indoor/1024x576/2" alt="Water damage after repair" class="after-image" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);">
+                    <div class="slider-handle absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize" style="left: 50%;"></div>
                 </div>
                 
                 <div class="before-after-slider rounded-xl overflow-hidden shadow-lg" data-aos="fade-left">
-                    <img src="https://picsum.photos/1024/576?random=3" alt="Bathroom before renovation">
-                    <img src="https://picsum.photos/1024/576?random=4" alt="Bathroom after renovation" class="after-image">
-                    <div class="slider-handle"></div>
+                    <img src="http://static.photos/indoor/1024x576/3" alt="Bathroom before renovation">
+                    <img src="http://static.photos/indoor/1024x576/4" alt="Bathroom after renovation" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);">
+                    <div class="slider-handle absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize" style="left: 50%;"></div>
                 </div>
             </div>
             
@@ -244,7 +300,7 @@
                             <div class="bg-white p-8 rounded-xl shadow-md">
                                 <div class="mb-6">
                                     <div class="flex items-center">
-                                        <img src="https://picsum.photos/200/200?random=10" alt="Sarah J." class="w-12 h-12 rounded-full mr-4">
+                                        <img src="http://static.photos/people/200x200/1" alt="Sarah J." class="w-12 h-12 rounded-full mr-4">
                                         <div>
                                             <h4 class="font-bold text-gray-800">Sarah J.</h4>
                                             <p class="text-gray-600">Laguna Beach</p>
@@ -267,7 +323,7 @@
                             <div class="bg-white p-8 rounded-xl shadow-md">
                                 <div class="mb-6">
                                     <div class="flex items-center">
-                                        <img src="https://picsum.photos/200/200?random=11" alt="Michael T." class="w-12 h-12 rounded-full mr-4">
+                                        <img src="http://static.photos/people/200x200/2" alt="Michael T." class="w-12 h-12 rounded-full mr-4">
                                         <div>
                                             <h4 class="font-bold text-gray-800">Michael T.</h4>
                                             <p class="text-gray-600">Newport Beach</p>
@@ -290,7 +346,7 @@
                             <div class="bg-white p-8 rounded-xl shadow-md">
                                 <div class="mb-6">
                                     <div class="flex items-center">
-                                        <img src="https://picsum.photos/200/200?random=12" alt="Jessica R." class="w-12 h-12 rounded-full mr-4">
+                                        <img src="http://static.photos/people/200x200/3" alt="Jessica R." class="w-12 h-12 rounded-full mr-4">
                                         <div>
                                             <h4 class="font-bold text-gray-800">Jessica R.</h4>
                                             <p class="text-gray-600">Dana Point</p>
@@ -403,11 +459,155 @@
                     <ul class="space-y-2">
                         <li class="flex items-start">
                             <i data-feather="phone" class="w-5 h-5 mr-3 mt-0.5"></i>
-                            <span class="text-gray-400">(714) 227-9588</span>
+                            <span class="text-gray-400">(949) 555-0123</span>
                         </li>
                         <li class="flex items-start">
                             <i data-feather="mail" class="w-5 h-5 mr-3 mt-0.5"></i>
                             <span class="text-gray-400">service@coastalhandyman.com</span>
                         </li>
                         <li class="flex items-start">
-                            <i data-feather="map-pin" class="w-5
+                            <i data-feather="map-pin" class="w-5 h-5 mr-3 mt-0.5"></i>
+                            <span class="text-gray-400">Orange County, CA</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Hours</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex justify-between">
+                            <span>Mon-Fri</span>
+                            <span>7:00 AM - 7:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Saturday</span>
+                            <span>8:00 AM - 5:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Sunday</span>
+                            <span>Emergency Only</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Coastal Handyman. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="facebook" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="instagram" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="twitter" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="youtube" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        // Before & After Slider functionality
+        const sliders = document.querySelectorAll('.before-after-slider');
+        sliders.forEach(slider => {
+            const handle = slider.querySelector('.slider-handle');
+            const afterImage = slider.querySelector('.after-image');
+            
+            let isDragging = false;
+            
+            handle.addEventListener('mousedown', () => {
+                isDragging = true;
+            });
+            
+            window.addEventListener('mouseup', () => {
+                isDragging = false;
+            });
+            
+            slider.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                
+                const rect = slider.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const percent = Math.min(Math.max(x / rect.width, 0), 1);
+                
+                afterImage.style.clipPath = `polygon(0 0, ${percent * 100}% 0, ${percent * 100}% 100%, 0% 100%)`;
+                handle.style.left = `${percent * 100}%`;
+            });
+            
+            // Touch support
+            handle.addEventListener('touchstart', () => {
+                isDragging = true;
+            });
+            
+            window.addEventListener('touchend', () => {
+                isDragging = false;
+            });
+            
+            slider.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+                
+                const rect = slider.getBoundingClientRect();
+                const x = e.touches[0].clientX - rect.left;
+                const percent = Math.min(Math.max(x / rect.width, 0), 1);
+                
+                afterImage.style.clipPath = `polygon(0 0, ${percent * 100}% 0, ${percent * 100}% 100%, 0% 100%)`;
+                handle.style.left = `${percent * 100}%`;
+            });
+        });
+        
+        // Testimonial slider functionality
+        let currentTestimonial = 0;
+        const testimonials = document.querySelectorAll('.testimonial-card');
+        const dots = document.querySelectorAll('.testimonial-dot');
+        
+        function showTestimonial(index) {
+            testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('bg-blue-600', 'active'));
+            
+            testimonials[index].classList.add('active');
+            dots[index].classList.add('bg-blue-600', 'active');
+            currentTestimonial = index;
+        }
+        
+        // Auto-rotate testimonials
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }, 5000);
+        
+        // Set service type when clicking service cards
+        function setService(serviceName) {
+            document.getElementById('serviceType').value = serviceName;
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real implementation, this would send to the server
+            // For now, we'll just show an alert
+            alert('Thank you! Your request has been submitted. We will contact you shortly.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
